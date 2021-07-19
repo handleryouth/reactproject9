@@ -5,10 +5,6 @@ import Media from "react-media";
 export default function Navbar() {
   const [check, setCheck] = useState(false);
 
-  const notShowed = {
-    visibility: "hidden",
-  };
-
   return (
     <div className="navbar">
       <div className="navbar-img">

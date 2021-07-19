@@ -217,6 +217,32 @@
 
 /* mobile navigation animation */
 
+@media all and (min-width: 1440px) {
+  .navbar-img {
+    margin-left: 6rem;
+    padding: 5rem 0;
+  }
+
+  .navbar-img img {
+    width: 12rem;
+    height: 2.3rem;
+  }
+
+  .navbar-link {
+    padding: 4.5rem 0;
+  }
+
+  .navbar-link button {
+    height: 4rem;
+    width: 12.5rem;
+  }
+
+  .navbar-link a {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .navbar {
     position: relative;

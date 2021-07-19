@@ -1,24 +1,28 @@
 .brandnaming {
   display: flex;
-  align-items: center;
   position: relative;
   bottom: 9vw;
 }
 
 .brandnaming-description {
-  flex-basis: 50%;
-  padding: 14vw 0 14vw 8vw;
+  flex-basis: 75%;
   background-color: #191921;
   color: white;
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3vw;
 }
 
 .brandnaming-description h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 .brand-image img {
-  width: 50vw;
+  width: 100%;
   min-width: 25rem;
+  height: 100%;
 }
 
 .arrow-container {
@@ -49,6 +53,8 @@
 
   .brandnaming-description {
     flex-basis: unset;
-    width: 92%;
+    height:unset;
+    padding: 7vw 5vw;
+
   }
 }

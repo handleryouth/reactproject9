@@ -3,15 +3,24 @@
   align-items: center;
 }
 
+.strategic-image-container {
+  flex-basis: 160%;
+}
+
 .strategic img {
-  width: 46vw;
-  min-width: 20rem;
+  width: 100%;
+  height: clamp(50rem, 82vw, 73.5rem);
 }
 
 .strategic-description {
   background-color: #191921;
   color: white;
-  padding: 24.5vw 4vw;
+  padding: 0 4vw;
+  height: clamp(50rem, 82vw, 73.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .strategic-description h1 {
@@ -42,6 +51,10 @@
     font-size: clamp(2rem, 7vw, 3rem);
   }
 
+  .strategic-image-container {
+    flex-basis: unset;
+  }
+
   .strategic img {
     width: 100vw;
     height: 100%;
@@ -49,7 +62,9 @@
   }
   .strategic-description {
     margin: 0;
-    padding: 0 0 5vw 10vw;
+    padding: 0 0 10vw 10vw;
+    display: unset;
+    height: unset;
   }
 
   .strategic-description p {
@@ -60,5 +75,11 @@
 
   .strategic-description a {
     font-size: clamp(1.1rem, 4vw, 1.3rem);
+  }
+}
+
+@media all and (max-width: 320px) {
+  .strategic img {
+    width: 100%;
   }
 }

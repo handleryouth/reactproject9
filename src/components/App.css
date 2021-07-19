@@ -5,3 +5,9 @@ body {
 .app {
   font-family: "Commissioner", sans-serif;
 }
+
+@media all and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+}

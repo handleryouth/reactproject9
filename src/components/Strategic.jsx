@@ -4,7 +4,7 @@ import "./Strategic.css"
 export default function Strategic() {
   return (
     <div className="strategic">
-      <div>
+      <div className="strategic-image-container">
         <img src="/assets/tablet/image-strategic.jpg" alt="Illustration" />
       </div>
 

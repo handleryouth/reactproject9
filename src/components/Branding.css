@@ -1,0 +1,68 @@
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.branding-title {
+  position: relative;
+  z-index: 1;
+  bottom: 2vw;
+  left: 12vw;
+}
+
+.branding-title h1 {
+  font-size: clamp(3rem, 5.8vw, 6rem);
+  width: 120%;
+  font-weight:900;
+}
+
+.branding-title p {
+  font-size: clamp(1rem, 1.7vw, 1.6rem);
+  width: 120%;
+  line-height: 1.8;
+}
+
+.branding-title button {
+  width: 14vw;
+  min-width: 8rem;
+  height: 4vw;
+  min-height: 3rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  background-color: #f94f4f;
+  color: white;
+  font-weight: 800;
+  border: none;
+}
+
+.branding img {
+  width: 55vw;
+  height: 54vw;
+}
+
+@media all and (max-width: 768px) {
+  .branding {
+    flex-direction: column-reverse;
+    margin-bottom: 3vw;
+  }
+
+  .branding img {
+    width: 100%;
+    height: unset;
+  }
+
+  .branding-title {
+    left: unset;
+    bottom: unset;
+    padding-left: 3vw;
+  }
+
+  .branding-title h1 {
+    width: 73%;
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .branding-title p {
+    width: 80%;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+  }
+}

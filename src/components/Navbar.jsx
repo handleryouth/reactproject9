@@ -5,6 +5,10 @@ import Media from "react-media";
 export default function Navbar() {
   const [check, setCheck] = useState(false);
 
+  const notShowed = {
+    visibility: "hidden",
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-img">
@@ -18,7 +22,7 @@ export default function Navbar() {
               <button
                 onClick={() => setCheck((prevState) => !prevState)}
                 className={`hamburger hamburger--spin ${
-                  check ? "is-active" : null
+                  check ? "is-active" : ""
                 }`}
                 type="button"
               >
@@ -28,8 +32,9 @@ export default function Navbar() {
               </button>
 
               <div
-                style={check ? null : { display: "none" }}
-                className="mobile-navbar-link"
+                className={`mobile-navbar-link ${
+                  check ? "puff-in-center" : "scale-out-center"
+                }`}
               >
                 <a href="#">About</a>
                 <a href="#">Service</a>

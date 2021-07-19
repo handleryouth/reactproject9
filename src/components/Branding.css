@@ -13,7 +13,7 @@
 .branding-title h1 {
   font-size: clamp(3rem, 5.8vw, 6rem);
   width: 120%;
-  font-weight:900;
+  font-weight: 900;
 }
 
 .branding-title p {
@@ -37,6 +37,31 @@
 .branding img {
   width: 55vw;
   height: 54vw;
+}
+
+@media all and (min-width: 1440px) {
+  .branding-title {
+    bottom: 2rem;
+    left: 10rem;
+  }
+
+  .branding-title h1 {
+    font-size: clamp(3rem, 5.8vw, 5rem);
+  }
+
+  .branding img {
+    width: 55rem;
+    height: 54rem;
+  }
+
+  .branding-title p {
+    font-size: 1.6rem;
+  }
+
+  .branding-title button {
+    width: 14rem;
+    height: 4rem;
+  }
 }
 
 @media all and (max-width: 768px) {

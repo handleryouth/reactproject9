@@ -5,18 +5,18 @@
 }
 
 .brandnaming-description {
-  flex-basis: 75%;
+  flex-basis: 85%;
   background-color: #191921;
   color: white;
   height: 31rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 3vw;
+  padding: 0 2vw 0 3vw;
 }
 
 .brandnaming-description h1 {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2.5rem, 6vw, 5rem);
 }
 
 .brand-image img {
@@ -32,6 +32,12 @@
 .arrow-container img {
   margin-right: 1vw;
   cursor: pointer;
+}
+
+@media all and (min-width: 1440px) {
+  .brandnaming {
+    bottom: 10rem;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -53,8 +59,7 @@
 
   .brandnaming-description {
     flex-basis: unset;
-    height:unset;
+    height: unset;
     padding: 7vw 5vw;
-
   }
 }

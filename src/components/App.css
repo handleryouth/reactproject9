@@ -6,6 +6,12 @@ body {
   font-family: "Commissioner", sans-serif;
 }
 
+@media all and (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+}
+
 @media all and (max-width: 320px) {
   body {
     width: 320px;

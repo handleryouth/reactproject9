@@ -20,6 +20,12 @@
   bottom: clamp(4rem, 9vw, 10rem);
 }
 
+@media all and (min-width: 1440px) {
+  .keypoint-content {
+    padding: 15rem 4rem 8rem 17rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .keypoint {
     flex-direction: column;

@@ -16,7 +16,7 @@
   background-color: #191921;
   color: white;
   padding: 0 4vw;
-  height: clamp(50rem, 82vw, 73.5rem);
+  height: clamp(50.3rem, 82vw, 74rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,6 +41,13 @@
   border-bottom: 3px solid #f94f4f;
   font-weight: 900;
 }
+
+@media all and (min-width: 1440px){
+  .strategic-description{
+    padding: 0 4rem;
+  }
+}
+
 
 @media all and (max-width: 768px) {
   .strategic {
